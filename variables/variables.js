@@ -19,6 +19,7 @@ const myConstVariable = 'Nice!';
 //uncomment this next line to make an error!
 //myConstVariable = "Boo!"; //variables created with const can not be reassigned
 console.log(myConstVariable);
+//we are going to use let most of the time, but you should know const is there
 
 //variables with the let keyword can be undefined, until you assign a value to it
 let newModernJavaScriptVariable; 
@@ -52,13 +53,11 @@ console.log(myArrayOfNumbers);
 //variables can be more complex too
 let myComplexVariable = {
     name: 'Julie',
-    age: 17,
+    age: 16,
     shoeSize: 7.5,
 }
 console.log(myComplexVariable);
 
 //someone had a birthday!
-myComplexVariable.age = 18;
+myComplexVariable.age = 17;
 console.log(myComplexVariable);
-
-
