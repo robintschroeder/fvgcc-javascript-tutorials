@@ -46,13 +46,13 @@ console.log('REFERENCE DATA TYPES');
 //these variables don't hold the data, they hold a pointer to a location in memory where the value is stored
 
 
-//arrays
+//arrays - hard brackets []
 console.log("ARRAYS");
 let myArrayOfNumbers = [1,2,3,4,5,6,7,8,9];
 myArrayOfNumbers.push(10);
 console.log(myArrayOfNumbers);
 
-//functions
+//functions - curley brackets {}
 console.log("FUNCTIONS");
 let myFunction = function(){
     alert('what a great function!'); 
@@ -62,7 +62,7 @@ let myFunction = function(){
 // comment this out
 // myFunction();
 
-//object literals
+//object literals - curley brackets {}
 console.log("OBJECT LITERALS");
 let myObjectLiteral = {
     stringProperty: 'some string value',
