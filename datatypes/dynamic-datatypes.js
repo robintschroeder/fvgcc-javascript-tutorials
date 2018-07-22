@@ -22,15 +22,45 @@ myString = true;
 console.log(myString); //notice that this prints in blue
 console.log(typeof(myString));
 
-//quotes are important!
+console.log(' ');
+
+//quotes are important! 
+//this is a string!
 myString = "4";
 console.log(myString); //notice that this does NOT print in blue
 console.log(typeof(myString));
 
+//here is another way to get a string
+myString = String(4); //capital S in String()
+console.log(myString); //notice that this does NOT print in blue
+console.log(typeof(myString));
+
+//here is another way to get a string
+myString = 4;
+console.log(myString.toString()); //notice that this does NOT print in blue
+console.log(typeof(myString.toString()));
+
+//let's get a number from a string
+myString = '4';
+console.log(myString); //notice that this does NOT print in blue
+console.log(typeof(myString));
+myString = Number(myString); //now it is a number (captial N)
+console.log(myString); //prints in blue, it is a number
+console.log(typeof(myString));
+
+//what happens if we try to make a string into a number??
+myString = 'Ha ha';
+console.log(myString); //notice that this does NOT print in blue
+console.log(typeof(myString));
+myString = Number(myString); //now it is a number (captial N)
+console.log(myString); //prints 'NaN' in blue = 'Not a Number'
+console.log(typeof(myString)); //type of number
+
+console.log(' ');
+
 myString = null;
 console.log(myString); 
 console.log(typeof(myString)); //returns 'object' BOO! - this is a known bug in JavaScript, null is a primitive type
-
 
 //array - hard brackets
 myString = ['blue', 'red', 'green'];

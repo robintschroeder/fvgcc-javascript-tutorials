@@ -10,6 +10,8 @@ console.log(myStringVariable);
 //#2 number
 let myNumberVariable = 45; //no quotes
 console.log(myNumberVariable);
+//add two decimals
+console.log(myNumberVariable.toFixed(2));
 
 //#3 boolean
 let myBooleanVariable = true; //no quotes
