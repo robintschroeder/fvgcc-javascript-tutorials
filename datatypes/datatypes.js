@@ -16,8 +16,8 @@ let myBooleanVariable = true; //no quotes
 console.log(myBooleanVariable);
 
 //#4 null
-let myBooleanVariable = true; //no quotes
-console.log(myBooleanVariable);
+let myNullVariable = null; //no quotes
+console.log(myNullVariable);
 
 //#5 undefined
 let myUndefinedVariable = undefined; //no quotes
@@ -47,12 +47,24 @@ console.log('REFERENCE DATA TYPES');
 
 
 //arrays
+console.log("ARRAYS");
 let myArrayOfNumbers = [1,2,3,4,5,6,7,8,9];
 myArrayOfNumbers.push(10);
 console.log(myArrayOfNumbers);
 
+//functions
+console.log("FUNCTIONS");
+let myFunction = function(){
+    alert('what a great function!'); 
+} 
+// notice that you aren't seeing this alert
+// you need to call the function to see it
+// comment this out
+// myFunction();
+
 //object literals
-var myObjectLiteral = {
+console.log("OBJECT LITERALS");
+let myObjectLiteral = {
     stringProperty: 'some string value',
     numberProperty: 2,
     booleanProperty: false,
@@ -66,8 +78,23 @@ var myObjectLiteral = {
     }
 };
 
-//functions
+console.log('obj literal variable created');
+console.log(myObjectLiteral.stringProperty);
+
+//we can execute the function by calling it
+myObjectLiteral.functionProperty();
+console.log('obj literal function executed');
+
 
 //dates
+console.log("DATES");
+let myNewDate = Date.now();
+console.log(myNewDate); //printing milliseconds since January 1, 1970.
+let myDate = new Date(2018, 06, 04);
+console.log(myDate);
+//Wed Jul 04 2018 00:00:00 GMT-0500 (Central Daylight Time)
+//notice how it takes a zero start array number for month (6) and not the actual month number (July = 7)? confusing!
 
-//anything else
+
+
+//anything else!
